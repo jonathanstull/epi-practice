@@ -1,6 +1,7 @@
 $(document).ready(function() {
-  $("button#green").click(function() {
-    $("body").addClass("green-background");
+  $("div.card#termMeth").click(function() {
+    $("p.front").toggle();
+    $("p.back").toggle();
   });
 
   $("button#yellow").click(function() {
