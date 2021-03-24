@@ -14,6 +14,6 @@ $(document).ready(function () {
     $(".verb").text(verbInput);
     $(".noun").text(nounInput);
 
-    $("#story").sho();
+    $("#story").show();
   });
 });
