@@ -1,3 +1,7 @@
+.card {
+  margin: 10px;
+}
+
 p.front {
   
 }
@@ -5,10 +9,6 @@ p.front {
 p.back {
   display: none;
 }
-
-
-
-
 
 .green-background {
   background-color: green;
