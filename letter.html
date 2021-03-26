@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/letter-styles.css" rel="stylesheet">
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Form Letter</title>
+</head>
+<body>
+  <div class="container">
+    <div id="date">
+      <p><span id="date"></span></p>
+    </div>
+    <div id="address">
+      <p>Name</p>
+      <p>Address</p>
+      <p>City, ST 00000</p>
+    </div>
+    <div id="salutation">
+      <p>Dearest <span id="addressee"></span>,</p>
+    </div>
+    <div id="missive">
+      <p>
+        I hope this message finds you in the highest of spirits. I am writing you regarding <span id="reason"></span>. This letter is to inform you that the contact information you have on file for the account <span id="account"></span> is no longer up to date. Please update your records to reflect the following information:
+      </p>
+      <ul>
+        <li id="newEmail"></li>
+        <li id="newPhone"></li>
+        <li id="newStreet"></li>
+        <li id="newCity"></li>
+        <li id="newState"></li>
+        <li id="newZip"></li>
+      </ul>
+      <p>Please direct any future correspondence to these new contact details. Thank you for your attention to this matter!</p>
+    </div>
+    <div id="farewell">
+      <p>Sincerely,</p>
+      <p><span id="addressor"></span></p>
+    </div>
+  </div>
+
+  
+</body>
+</html>
