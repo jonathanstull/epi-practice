@@ -9,34 +9,77 @@
 </head>
 <body>
   <div class="container">
-    <div id="date">
-      <p><span id="date"></span></p>
+    <h1>Notification of Updated Contact Information</h1>
+    <p>If your contact information has recently changed, please submit to generate a letter with your updated contact information. Please send your letter to HR at:</p>
+    <p>1234 Earnest Way, Yreka, CA 97010</p>
+    <div id="form">
+      <div class="form-group">
+        <label for="date">Today's date:</label>
+        <input id="date" class="form-control" type="text">
+      </div>
+      <div class="form-group">
+        <label for="account">Account number:</label>
+        <input id="account" class="form-control" type="text">
+      </div>
+      <div class="form-group">
+        <label for="newEmail">Enter your new email address:</label>
+        <input id="newEmail" class="form-control" type="text">
+      </div>
+      <div class="form-group">
+        <label for="newPhone">Enter your new phone number:</label>
+        <input id="newPhone" class="form-control" type="text">
+      </div>
+      <div class="form-group">
+        <label for="newStreet">Enter your new street address:</label>
+        <input id="newStreet" class="form-control" type="text">
+      </div>
+      <div class="form-group">
+        <label for="newCity">Enter your new city of residence:</label>
+        <input id="newCity" class="form-control" type="text">
+      </div>
+      <div class="form-group">
+        <label for="newState">Enter your new state of residence:</label>
+        <input id="newState" class="form-control" type="text">
+      </div>
+      <div class="form-group">
+        <label for="newZip">Enter your new zip code:</label>
+        <input id="newZip" class="form-control" type="text">
+      </div>
+      <div class="form-group">
+        <label for="signature">Type in your name to sign:</label>
+        <input id="signature" class="form-control" type="text">
+      </div>
     </div>
-    <div id="address">
-      <p>Name</p>
-      <p>Address</p>
-      <p>City, ST 00000</p>
-    </div>
-    <div id="salutation">
-      <p>Dearest <span id="addressee"></span>,</p>
-    </div>
-    <div id="missive">
-      <p>
-        I hope this message finds you in the highest of spirits. I am writing you regarding <span id="reason"></span>. This letter is to inform you that the contact information you have on file for the account <span id="account"></span> is no longer up to date. Please update your records to reflect the following information:
-      </p>
-      <ul>
-        <li id="newEmail"></li>
-        <li id="newPhone"></li>
-        <li id="newStreet"></li>
-        <li id="newCity"></li>
-        <li id="newState"></li>
-        <li id="newZip"></li>
-      </ul>
-      <p>Please direct any future correspondence to these new contact details. Thank you for your attention to this matter!</p>
-    </div>
-    <div id="farewell">
-      <p>Sincerely,</p>
-      <p><span id="addressor"></span></p>
+    <div id="letter">
+      <div id="date">
+        <p><span id="date"></span></p>
+      </div>
+      <div id="address">
+        <p>Human Resources</p>
+        <p>1234 Earnest Way</p>
+        <p>Yreka, CA 97010</p>
+      </div>
+      <div id="salutation">
+        <p>To whom it may concern,</p>
+      </div>
+      <div id="missive">
+        <p>
+          I hope this message finds you in the highest of spirits. This letter is to inform you that the contact information you have on file for the account <span id="account"></span> is no longer up to date. Please update your records to reflect the following information:
+        </p>
+        <ul>
+          <li id="newEmail"></li>
+          <li id="newPhone"></li>
+          <li id="newStreet"></li>
+          <li id="newCity"></li>
+          <li id="newState"></li>
+          <li id="newZip"></li>
+        </ul>
+        <p>Please direct any future correspondence to these new contact details. Thank you for your attention to this matter!</p>
+      </div>
+      <div id="farewell">
+        <p>Sincerely,</p>
+        <p><span id="signature"></span></p>
+      </div>
     </div>
   </div>
 
