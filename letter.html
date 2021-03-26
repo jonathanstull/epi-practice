@@ -4,18 +4,18 @@
   <link href="css/bootstrap.css" rel="stylesheet">
   <link href="css/letter-styles.css" rel="stylesheet">
   <script src="js/jquery-3.6.0.js"></script>
-  <script src="js/scripts.js"></script>
+  <script src="js/letter-scripts.js"></script>
   <title>Form Letter</title>
 </head>
 <body>
   <div class="container">
     <h1>Notification of Updated Contact Information</h1>
-    <p>If your contact information has recently changed, please submit to generate a letter with your updated contact information. Please send your letter to HR at:</p>
-    <p>1234 Earnest Way, Yreka, CA 97010</p>
-    <div id="form">
+    <p>If your contact information has recently changed, please use this form to generate a letter with your updated contact information. Please send your letter to HR at:</p>
+    <p><strong>1234 Earnest Way, Yreka, CA 97010</strong></p>
+    <form id="newContact">
       <div class="form-group">
         <label for="date">Today's date:</label>
-        <input id="date" class="form-control" type="text">
+        <input id="date" class="form-control" type="date">
       </div>
       <div class="form-group">
         <label for="account">Account number:</label>
@@ -46,14 +46,15 @@
         <input id="newZip" class="form-control" type="text">
       </div>
       <div class="form-group">
-        <label for="signature">Type in your name to sign:</label>
+        <label for="signature">Type your full name to sign the letter:</label>
         <input id="signature" class="form-control" type="text">
       </div>
-    </div>
-    <button id="btn" type="submit">Submit</button>
-    <div id="letter">
+      <button id="btn" type="submit">Submit</button>
+    </form>
+
+    <div class="letter">
       <div id="date">
-        <p><span id="date"></span></p>
+        <p><span class="dateIn"></span></p>
       </div>
       <div id="address">
         <p>Human Resources</p>
@@ -65,25 +66,23 @@
       </div>
       <div id="missive">
         <p>
-          I hope this message finds you in the highest of spirits. This letter is to inform you that the contact information you have on file for the account <span id="account"></span> is no longer up to date. Please update your records to reflect the following information:
+          I hope this message finds you in the highest of spirits. This letter is to inform you that the contact information you have on file for the account <span class="accountIn"></span> is no longer up to date. Please update your records to reflect the following information:
         </p>
         <ul>
-          <li id="newEmail"></li>
-          <li id="newPhone"></li>
-          <li id="newStreet"></li>
-          <li id="newCity"></li>
-          <li id="newState"></li>
-          <li id="newZip"></li>
+          <li class="newEmailIn"></li>
+          <li class="newPhoneIn"></li>
+          <li class="newStreetIn"></li>
+          <li class="newCityIn"></li>
+          <li class="newStateIn"></li>
+          <li class="newZipIn"></li>
         </ul>
         <p>Please direct any future correspondence to these new contact details. Thank you for your attention to this matter!</p>
       </div>
       <div id="farewell">
         <p>Sincerely,</p>
-        <p><span id="signature"></span></p>
+        <p class="signatureIn"></p>
       </div>
     </div>
   </div>
-
-  
 </body>
 </html>
